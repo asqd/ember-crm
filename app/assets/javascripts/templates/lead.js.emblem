@@ -1,9 +1,11 @@
 outlet
+
 unless isEditing
   article#lead
 
-    h1= model.fullName
-    link-to 'edit' 'lead.edit' model classNames='edit'
+    h1
+      fullName
+      link-to 'edit' 'lead.edit' model classNames='edit'
 
     p
       '  Email:
