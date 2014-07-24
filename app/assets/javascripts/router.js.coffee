@@ -5,6 +5,8 @@
 #   roorURL: '/'
 
 App.Router.map ()->
-	@resource 'leads', path: '/'
+	@resource 'leads', path: '/', ->
+    @resource 'lead', path: '/leads/:id', ->
+      @route 'edit'
   # @resource('posts')
 
