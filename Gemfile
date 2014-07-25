@@ -21,6 +21,8 @@ gem 'emblem-rails'
 
 gem 'ffaker'
 gem 'puma'
+
+gem 'rails_12factor', group: :production
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
